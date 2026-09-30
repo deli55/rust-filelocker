@@ -1,0 +1,19 @@
+[package]
+name = "rust-filelocker"
+version = "0.1.0"
+edition = "2021"
+description = "A secure file locking/unlocking tool built in Rust"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+zeroize = { version = "1", features = ["derive"] }
+
+# Cryptographic dependencies
+argon2 = "0.5"
+aes-gcm = "0.10"
+rand = "0.8"
+rpassword = "7"
+arboard = "3"
